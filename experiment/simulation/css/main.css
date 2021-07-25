@@ -140,4 +140,8 @@ figcaption {
     display: block;
     word-break: break-word;
   }
+
+  #tube {
+    height: 200pt;
+  }
 }
