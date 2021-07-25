@@ -13,12 +13,19 @@ async function moveTube() {
     duration: 800,
     easing: "linear",
   });
+  let transX = 630;
+  let transY = -10;
+  screenWidth();
+  if (divWidth < 769) {
+    transX = -10;
+    transY = 500;
+  }
   if (overallIteration === 2) {
     a1.add({
       duration: 1000,
-      translateX: 630,
-      translateY: -10,
-      scale: 0.25,
+      translateX: transX,
+      translateY: transY,
+      scale: 0.4,
     })
       .add({
         opacity: 0,
@@ -81,21 +88,11 @@ async function pourBenzene() {
     let startX = "-490%";
     let startY = "-100%";
 
-    let endX = "-400%";
-    let endY = "550%";
+    let endX = "-430%";
+    let endY = "250%";
 
     screenWidth();
     console.log("divWidth: ", divWidth);
-
-    if (divWidth > 1759) {
-      startY = "-100%";
-      startX = "-490%";
-    }
-
-    if (divWidth < 769) {
-      startY = "120%";
-      startX = "-980%";
-    }
 
     a1.add({
       duration: 0,
