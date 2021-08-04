@@ -1,13 +1,8 @@
 Nuclei with odd atomic (number of protons) or mass number (total number of protons and neutrons) or both have quantized spin angular momentum and a magnetic moment. Interaction of the magnetic moment of an atomic nucleus (µ) with an external magnetic field results in absorption of energy and change their spin orientation with respect to the external field. NMR gives the chemical properties of molecules by studying the magnetic properties of the atomic nuclei which is measured by resonant absorption by nuclei.
 
-
        	    [figure1](./images/figure3_theory.png)
 
-
-
 The nuclear spin energy levels in an external magnetic field B0.
-Source: [http://www.physicscentral.com/explore/action/fmri1.cfm](http://www.physicscentral.com/explore/action/fmri1.cfm)
-
 
 **Chemical Shift:**
 
@@ -21,7 +16,6 @@ where 'σ' is the shield constant. The electrons around the nucleus shield the n
 
 The peak value of TMS is assigned as d = 0.00.
 
-
 **Solvent and internal standard:**
 
 Tetramethylsilane is used as an internal standard during the NMR measurements for the following reasons:
@@ -33,9 +27,7 @@ Tetramethylsilane is used as an internal standard during the NMR measurements fo
 
 When using the modern NMR instruments, no internal standard is added to the sample to be measure. The difference between the solvent signal and the TMS is known. The modern instruments detect the solvent signal and lock them, which now can serve as the internal standard.
 
-
-     	       [figure2](images/figure5_theory.png)
-
+     	       [figure2](./images/figure5_theory.png)
 
 Source: jpkc.henu.edu.cn
 
@@ -50,9 +42,6 @@ An NMR spectrum gives various information of the compound that it helps in struc
 • Multiplicity gives information on the number of protons on adjacent atoms
 • Integration of the peaks (peak area) gives the number of protons in each environment
 
+[figure3](./images/figure6_theory.png)
 
-  	      	 [figure3](images/figure6_theory.png)
-
-
-
-Source: [http://cactus.dixie.edu/smblack/chem2310/ch5/LG_key_Ch5.pdf](http://cactus.dixie.edu/smblack/chem2310/ch5/LG_key_Ch5.pdf)
+Source: [Cactus Learning Guide](http://cactus.dixie.edu/smblack/chem2310/ch5/LG_key_Ch5.pdf)
