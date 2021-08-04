@@ -8,7 +8,7 @@ The nuclear spin energy levels in an external magnetic field B0.
 
 Nuclei in a different chemical environment experience different magnetic fields. The electron cloud around the nuclei induces electronic angular momentum, which gives rise to an additional magnetic field ß, which is given as:
 
-δß = -σß0
+δß = -σß<sub>0</sub>
 
 Where 'σ' is the shield constant, the electrons around the nucleus shield the nuclei from an effective magnetic field and require lower frequency energy to cause resonance. Therefore different nuclei in the same compound come into resonance at different frequencies. In general, hydrogens bound to carbons attached to electron-withdrawing groups tend to resonate at higher frequencies. The position where a particular hydrogen atom resonates relative to TMS is called its chemical shift.
 
