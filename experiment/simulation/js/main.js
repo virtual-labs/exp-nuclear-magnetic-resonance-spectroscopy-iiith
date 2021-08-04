@@ -92,7 +92,6 @@ async function pourBenzene() {
     let endY = "250%";
 
     screenWidth();
-    console.log("divWidth: ", divWidth);
 
     a1.add({
       duration: 0,

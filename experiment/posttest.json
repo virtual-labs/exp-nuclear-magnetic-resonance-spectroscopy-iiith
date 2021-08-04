@@ -27,10 +27,10 @@
         "d": "Septet"
       },
       "explanations": {
-        "a": "The splitting pattern depends on the number of protons on the neighbouring atom (n) using the formula (n+1). Methylene protons in propane belongs to CH&#83232 group in the middle which has 3 H atoms each on the neighbouring atoms. For triplet, n would be 2.",
-        "b": "The splitting pattern depends on the number of protons on the neighbouring atom (n) using the formula (n+1). Methylene protons in propane belongs to CH&#83232 group in the middle which has 3 H atoms each on the neighbouring atoms. For quartet, n would be 3.",
-        "c": "The splitting pattern depends on the number of protons on the neighbouring atom (n) using the formula (n+1). Methylene protons in propane belongs to CH&#83232 group in the middle which has 3 H atoms each on the neighbouring atoms. For doublet, n would be 1.",
-        "d": "The splitting pattern depends on the number of protons on the neighbouring atom (n) using the formula (n+1). Methylene protons in propane belongs to CH&#83232 group in the middle which has 3 H atoms each on the neighbouring atoms. For septet, n would be 6."
+        "a": "The splitting pattern depends on the number of protons on the neighbouring atom (n) using the formula (n+1). Methylene protons in propane belongs to CH&#8322 group in the middle which has 3 H atoms each on the neighbouring atoms. For triplet, n would be 2.",
+        "b": "The splitting pattern depends on the number of protons on the neighbouring atom (n) using the formula (n+1). Methylene protons in propane belongs to CH&#8322 group in the middle which has 3 H atoms each on the neighbouring atoms. For quartet, n would be 3.",
+        "c": "The splitting pattern depends on the number of protons on the neighbouring atom (n) using the formula (n+1). Methylene protons in propane belongs to CH&#8322 group in the middle which has 3 H atoms each on the neighbouring atoms. For doublet, n would be 1.",
+        "d": "The splitting pattern depends on the number of protons on the neighbouring atom (n) using the formula (n+1). Methylene protons in propane belongs to CH&#8322 group in the middle which has 3 H atoms each on the neighbouring atoms. For septet, n would be 6."
       },
       "difficulty": "intermediate",
       "correctAnswer": "d"
@@ -46,7 +46,7 @@
       "explanations": {
         "a": "",
         "b": "",
-        "c": "The ratio of the different molecules depends on their numbers. Two CH&#83233 groups on C will have 6 equivalent protons, one CH&#83233 on carbonyl carbon will have one set of 3 equivalent protons, and one H in tertiary C (C-H) will a different proton. Hence the ratio (6.1.3).",
+        "c": "The ratio of the different molecules depends on their numbers. Two CH&#8323 groups on C will have 6 equivalent protons, one CH&#8323 on carbonyl carbon will have one set of 3 equivalent protons, and one H in tertiary C (C-H) will a different proton. Hence the ratio (6.1.3).",
         "d": ""
       },
       "difficulty": "intermediate",
