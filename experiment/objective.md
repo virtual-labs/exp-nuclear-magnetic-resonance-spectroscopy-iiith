@@ -2,8 +2,6 @@
 
 - Systemically evaluate three sets of compounds with n equivalent number of protons.
 
+             [image](./images/figure2_objective.png)
 
-  	       [image](images/figure2_objective.png)
-	       
-
-Source: http://www.mhhe.com/physsci/chemistry/carey/student/olc/ch13nmr.html
+Source: https://www.mhhe.com/physsci/chemistry/carey/student/olc/ch13nmr.html
