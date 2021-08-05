@@ -1,3 +1,7 @@
+Nuclear Magnetic Resonance (NMR) spectroscopy is one of the powerful analytical techniques used in determining the structure of organic compounds. Isotopes of 1H, 13C, 19F, and 31P have I = 0.5 and are of great interest. 1H NMR or the proton NMR is the technique in which the hydrogen nuclei of the compound/substance are studied in order to determine the structure of the compound under study. The two most important characteristics of NMR spectra are the chemical shift and the coupling constant. This experiment deals with virtually recording the proton NMR spectra for a set of samples and analyzing them.
+
+<center> <image src="./images/figure1_intro.png"> </center>
+
 Nuclei with odd atomic (number of protons) or mass number (total number of protons and neutrons) or both have quantized spin angular momentum and a magnetic moment. Interaction of the magnetic moment of an atomic nucleus (µ) with an external magnetic field results in the absorption of energy and changes their spin orientation with respect to the external field. NMR gives the chemical properties of molecules by studying the magnetic properties of the atomic nuclei, which is measured by resonant absorption by nuclei.
 
 <image src="./images/figure3_theory.png">
