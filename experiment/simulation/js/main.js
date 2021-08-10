@@ -5,6 +5,19 @@ let videoSpeed = 1;
 let speedFactor = 1.0;
 let yellow = "#cecc9b";
 
+const apparatusOptions = [
+  "beaker-benzene",
+  "device-tube",
+  "device-spectro",
+  "observe",
+];
+
+apparatusOptions.forEach(function (option) {
+  document.getElementById(option).style.pointerEvents = "none";
+});
+
+document.getElementById("beaker-benzene").style.pointerEvents = "auto";
+
 async function moveTube() {
   let image = document.getElementById("tube");
   image.setAttribute("opacity", "1");
@@ -35,6 +48,9 @@ async function moveTube() {
         translateY: 0,
         scale: 1,
       });
+
+    document.getElementById("tube").style.cursor = "default";
+    document.getElementById("observe").style.pointerEvents = "auto";
 
     //"instruction" is the Instruction HTML element that will be visible only in wide screens, i.e, width greater than 768px
     document.getElementById("instruction").innerHTML =
@@ -144,18 +160,25 @@ function setupMessage() {
   setup++;
 }
 
+function apparatusSetup(visibleID, oldOption, newOption) {
+  document.getElementById(visibleID).style.visibility = "visible";
+  document.getElementById(oldOption).style.pointerEvents = "none";
+  document.getElementById(newOption).style.pointerEvents = "auto";
+}
+
 setupMessage();
 async function visibility(x) {
   if (x === 1 && overallIteration === -2) {
-    document.getElementById("benzene-row").style.visibility = "visible";
+    apparatusSetup("benzene-row", "beaker-benzene", "device-tube");
     overallIteration++;
     setupMessage();
   } else if (x === 2 && overallIteration === -1) {
-    document.getElementById("tube-row").style.visibility = "visible";
+    apparatusSetup("tube-row", "device-tube", "device-spectro");
     overallIteration++;
     setupMessage();
   } else if (x === 3 && overallIteration === 0) {
-    document.getElementById("spectro-row").style.visibility = "visible";
+    apparatusSetup("spectro-row", "device-spectro", "restart");
+    document.getElementById("benzene").style.cursor = "pointer";
     overallIteration++;
     changeMessage();
   }
@@ -173,8 +196,6 @@ function changeMessage() {
   //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
   document.getElementById("observation").innerHTML = instructionMessages[iter1];
 }
-
-document.getElementById("benzene").style.cursor = "pointer";
 
 let iter2 = -1;
 let observationMessages = [
@@ -207,6 +228,11 @@ document.getElementById("simulation").style.minHeight =
 let restartAnimation = false;
 
 async function restart() {
+  apparatusOptions.forEach(function (option) {
+    document.getElementById(option).style.pointerEvents = "none";
+  });
+  document.getElementById("beaker-benzene").style.pointerEvents = "auto";
+
   document.getElementById("simulation").style.height = originalSimulationHeight;
 
   document.getElementById("animation-video").style.display = "none";
@@ -234,7 +260,7 @@ async function restart() {
   restartAnimation = true;
 
   document.getElementById("tube").style.cursor = "default";
-  document.getElementById("benzene").style.cursor = "pointer";
+  document.getElementById("benzene").style.cursor = "default";
   document.getElementById("spectro").style.cursor = "default";
 
   //Resetting the Cuvette
@@ -246,6 +272,7 @@ async function restart() {
 
 async function observe() {
   if (overallIteration === 3) {
+    document.getElementById("observe").style.pointerEvents = "none";
     document.getElementById("slidecontainer").style.display = "block";
     document.getElementById("apparatus-bottles").style.display = "none";
     document.getElementById("apparatus-spectro").style.display = "none";
@@ -267,6 +294,7 @@ async function observe() {
 
     if (!restartAnimation) {
       overallIteration++;
+      document.getElementById("observe").style.pointerEvents = "auto";
 
       //"instruction" is the Instruction HTML element that will be visible only in wide screens, i.e, width greater than 768px
       document.getElementById("instruction").innerHTML =
@@ -276,6 +304,7 @@ async function observe() {
         "Click on Observe option in the Control Menu again to see the graph.";
     }
   } else if (overallIteration === 4) {
+    document.getElementById("observe").style.pointerEvents = "none";
     observeMessage();
 
     document.getElementById("slidecontainer").style.display = "none";
@@ -335,5 +364,6 @@ function createGraph() {
     },
   };
 
-  Plotly.newPlot("chart-container", data, layout);
+  let config = { responsive: true };
+  Plotly.newPlot("chart-container", data, layout, config);
 }
