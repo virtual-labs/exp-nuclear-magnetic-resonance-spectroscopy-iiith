@@ -5,6 +5,7 @@ let videoSpeed = 1;
 let speedFactor = 1.0;
 let yellow = "#cecc9b";
 
+
 const apparatusOptions = [
   "beaker-benzene",
   "device-tube",
@@ -49,8 +50,10 @@ async function moveTube() {
         scale: 1,
       });
 
+
     document.getElementById("tube").style.cursor = "default";
     document.getElementById("observe").style.pointerEvents = "auto";
+
 
     //"instruction" is the Instruction HTML element that will be visible only in wide screens, i.e, width greater than 768px
     document.getElementById("instruction").innerHTML =
@@ -160,6 +163,7 @@ function setupMessage() {
   setup++;
 }
 
+
 function apparatusSetup(visibleID, oldOption, newOption) {
   document.getElementById(visibleID).style.visibility = "visible";
   document.getElementById(oldOption).style.pointerEvents = "none";
@@ -233,6 +237,7 @@ async function restart() {
   });
   document.getElementById("beaker-benzene").style.pointerEvents = "auto";
 
+
   document.getElementById("simulation").style.height = originalSimulationHeight;
 
   document.getElementById("animation-video").style.display = "none";
@@ -296,6 +301,7 @@ async function observe() {
       overallIteration++;
       document.getElementById("observe").style.pointerEvents = "auto";
 
+
       //"instruction" is the Instruction HTML element that will be visible only in wide screens, i.e, width greater than 768px
       document.getElementById("instruction").innerHTML =
         "Click on Observe option in the Control Menu again to see the graph.";
@@ -305,6 +311,7 @@ async function observe() {
     }
   } else if (overallIteration === 4) {
     document.getElementById("observe").style.pointerEvents = "none";
+
     observeMessage();
 
     document.getElementById("slidecontainer").style.display = "none";
