@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. When an external magnetic field is applied, what happens to the protons in the sample?",
+      "answers": {
+        "a": "All protons align with the field.",
+        "b": "All protons align opposite to the field.",
+        "c": "Some protons align with the field and some align opposite to it.",
+        "d": "All protons assume a random orientation. "
+      },
+      "explanations": {
+        "a": "Almost half of the protons align along the field.",
+        "b": "Almost half of the protons align opposite to the field.",
+        "c": "It is true that some protons align along and some align opposite the field and this difference in the number causes the signal to occur.",
+        "d": "None of the protons assume random orientation. They either align along or opposite the field."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "c"
+    },
+    {
+      "question": "2. Which of the following is false about NMR experiment?",
+      "answers": {
+        "a": "The energy required to flip the spin of a proton is in the infrared region of the electromagnetic spectrum.",
+        "b": "The energy difference between the two spin states depends on the strength of the magnetic field.",
+        "c": "When energy absorption occurs, the nuclei are said to be in resonance with the electromagnetic radiation.",
+        "d": "When a proton is aligned with the magnetic field, its energy is lower than when it is aligned against the magnetic field."
+      },
+      "explanations": {
+        "a": "The energy required to flip the spin of a proton mostly falls in the radiowave region.",
+        "b": "The splitting of the spin states depends on the strength of the magnetic field applied. Stronger magnetic field will split them more.",
+        "c": "When the protons absorb energy and undergo flipping, they are known to be in resonance with the incoming radiowave frequency.",
+        "d": "Protons aligned along the field have lower energy while those aligned opposite the field have higher energy."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "a"
+    },
+    {
+      "question": "3. What is the value of the chemical shift δ for an absorption at 1800 Hz from tetramethylsilane (TMS) using an NMR spectrometer with an operating frequency of 300 MHz?",
+      "answers": {
+        "a": "1.66 ppm",
+        "b": "16.6 ppm",
+        "c": "6.0 ppm",
+        "d": "4.0 ppm"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "chemical shift = (frequency of absorption / frequency of operation ) ppm",
+        "d": ""
+      },
+      "difficulty": "intermediate",
+      "correctAnswer": "c"
+    },
+    {
+      "question": "4. Which of the following compounds has the MOST deshielded methyl protons?",
+      "answers": {
+        "a": "tetramethylsilane",
+        "b": "methyl fluoride",
+        "c": "methanol",
+        "d": "methylamine"
+      },
+      "explanations": {
+        "a": "Deshielding depends upon the electron withdrawing power of the attached atoms/group. Silicon has low electronegativity due to which it cannot withdraw much of the electron towards itself from the C-H bond.",
+        "b": "Fluorine has the highest electronegativity in the periodic table due to which it will withdraw the electrons from the C-H bond by the highest amount among these.",
+        "c": "Oxygen is lower in electronegativity than Fluorine and hence the methyl protons will be less deshielded than with F.",
+        "d": "Nitrogen is much lower in electronegativity than Fluorine and hence the methyl protons will be less deshielded than with F."
+      },
+      "difficulty": "advanced",
+      "correctAnswer": "b"
+    },
+    {
+      "question": "5. How many signals would the following molecule show in its 1H NMR spectrum? <img src='./images/pre5.png' alt='Question Image'>",
+      "answers": {
+        "a": "5",
+        "b": "1",
+        "c": "6",
+        "d": "3"
+      },
+      "explanations": {
+        "a": "The number of signals depend on the number of non - equivalent protons (H) in the molecule. In this molecule, there are 5 different types of protons namely CH&#8323, CH&#8322, ortho H, meta H and para H.",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "difficulty": "advanced",
+      "correctAnswer": "a"
+    }
+  ]
+}

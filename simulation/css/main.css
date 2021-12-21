@@ -1,0 +1,141 @@
+.instructions-box {
+  margin: auto;
+  margin-top: 1%;
+  max-width: 80%;
+  padding: 1% 1%;
+}
+
+.procedure-message {
+  font-size: 120%;
+}
+
+.workspace {
+  flex-wrap: wrap;
+}
+
+.heavy {
+  font-size: 2.2rem;
+}
+
+.heavy2 {
+  font-size: 7rem;
+}
+
+.sidebar {
+  height: 100%;
+}
+
+#slider {
+  width: 80%;
+}
+
+.slidecontainer {
+  display: none;
+}
+
+.apparatus {
+  max-width: 20%;
+  order: 1;
+  margin-left: 2.5%;
+}
+
+.apparatus-end {
+  padding-bottom: 20%;
+}
+
+.control {
+  border-top: 3px solid rgb(151, 210, 61);
+}
+
+.simulation {
+  order: 2;
+  border: 3px solid rgb(0, 0, 0);
+  max-width: 70%;
+  max-height: 700px;
+}
+
+.observations-box {
+  width: 20%;
+  margin-right: 2.5%;
+  order: 3;
+  display: none;
+}
+
+.animation-video {
+  display: none;
+  width: auto;
+}
+
+#animation-bottom-right {
+  max-height: 600px;
+  max-width: auto;
+}
+
+.plotted-graph-window {
+  display: none;
+  width: auto;
+}
+
+#chart-container {
+  max-height: 620px;
+  max-width: auto;
+}
+
+#spectro {
+  width: auto;
+  max-height: 620px;
+}
+
+#spectro-row,
+#tube-row,
+#benzene-row {
+  visibility: hidden;
+}
+
+figcaption {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 769px) {
+  .instructions-box {
+    margin-left: 24%;
+    width: 71%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .instructions-box {
+    display: none;
+  }
+
+  .workspace {
+    flex-wrap: wrap;
+  }
+
+  .apparatus {
+    order: 1;
+    width: 40%;
+    margin-left: none;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .simulation {
+    order: 3;
+    width: 100%;
+    max-height: none;
+  }
+
+  .observations-box {
+    order: 2;
+    width: 40%;
+    max-width: auto;
+    margin-right: 0.5%;
+    display: block;
+    word-break: break-word;
+  }
+
+  #tube {
+    height: 200pt;
+  }
+}
